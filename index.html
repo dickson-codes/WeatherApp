@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="main-box">
+		<div class="m-city-name">
+			Chennai,<span> India</span>
+		</div>
+		
+		<div class="m-temp-img">
+			<img src="part-sun.png">
+		</div>
+		
+		<div class="m-temp-num">
+			30°C
+		</div>
+		
+		<div class="m-temp-desc">
+			Partly sunny today
+		</div>
+	</div>
+	
+	<div class="secondary-box">
+		<div class="s-wind">
+			<img src="wind.png"> 11km/hr
+		</div>
+		
+		<div class="s-humidity">
+			<img src="humidity.png"> 70%
+		</div>
+		
+		<div class="s-temp">
+			<img src="temp-logo.png"> 30°C
+		</div>
+	</div>
+	
+	<div class="hourly-forecast">
+		<div class="hf-heading">
+			Hourly Forecast
+		</div>
+		
+		<div class="hf-grid">
+			<div class="hf-elem">
+				<div class="hf-temp-img">
+					<img src="part-sun.png">
+				</div>
+				
+				<div class="hf-time">
+					Now
+				</div>
+				
+				<div class="hf-temp-num">
+					30°C
+				</div>
+			</div>
+			
+			<div class="hf-elem">
+				<div class="hf-temp-img">
+					<img src="part-sun.png">
+				</div>
+				
+				<div class="hf-time">
+					5pm
+				</div>
+				
+				<div class="hf-temp-num">
+					29°C
+				</div>
+			</div>
+			
+			<div class="hf-elem">
+				<div class="hf-temp-img">
+					<img src="cloud.png">
+				</div>
+				
+				<div class="hf-time">
+					6pm
+				</div>
+				
+				<div class="hf-temp-num">
+					28°C
+				</div>
+			</div>
+			
+			<div class="hf-elem">
+				<div class="hf-temp-img">
+					<img src="part-moon.png">
+				</div>
+				
+				<div class="hf-time">
+					7pm
+				</div>
+				
+				<div class="hf-temp-num">
+					28°C
+				</div>
+			</div>
+			
+			<div class="hf-elem">
+				<div class="hf-temp-img">
+					<img src="moon.png">
+				</div>
+				
+				<div class="hf-time">
+					8pm
+				</div>
+				
+				<div class="hf-temp-num">
+					27°C
+				</div>
+			</div>
+			
+			<div class="hf-elem">
+				<div class="hf-temp-img">
+					<img src="moon.png">
+				</div>
+				
+				<div class="hf-time">
+					9pm
+				</div>
+				
+				<div class="hf-temp-num">
+					27°C
+				</div>
+			</div>
+			
+			<div class="hf-elem">
+				<div class="hf-temp-img">
+					<img src="moon.png">
+				</div>
+				
+				<div class="hf-time">
+					10pm
+				</div>
+				
+				<div class="hf-temp-num">
+					26°C
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Top Search Icon -->
+<div class="top-search">
+  <img src="searchbar.png" id="searchIcon">
+</div>
+	
+	<!-- Search Overlay -->
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box">
+    <input type="text" id="overlay-input" placeholder="Enter city...">
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+/* ===== Mobile First (existing styles) ===== */
+
+/* Reset & body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url('bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  
+  padding: 0px; /* space for bottom bar */
+}
+
+/* Main Box */
+.main-box {
+  width: 90%;
+  max-width: 350px;
+  margin: 0px auto 20px auto;
+  padding: 25px;
+  text-align: center;
+}
+
+.m-city-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.m-city-name span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #CECECE;
+}
+
+.m-temp-img {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.m-temp-img img {
+  width: 250px;
+  height: 250px;
+}
+
+.m-temp-num {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.m-temp-desc {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ddd;
+}
+
+/* Secondary Box */
+.secondary-box {
+  width: 90%;
+  max-width: 350px;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.secondary-box div {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.secondary-box img {
+  width: 24px;
+  height: 24px;
+  margin-right: 6px;
+}
+
+.s-temp img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hourly Forecast */
+.hourly-forecast {
+  width: 95%;
+  max-width: 350px;
+  margin: 0 auto 20px auto;
+  padding: 15px 20px;
+}
+
+.hf-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.hf-grid {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.hf-grid::-webkit-scrollbar {
+  display: none;
+}
+
+.hf-elem {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(0,0,0,0.35);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  padding: 20px 25px;
+  box-sizing: border-box;
+  min-width: 70px;
+}
+
+.hf-elem .hf-temp-num {
+  font-size: 14px;
+}
+
+.hf-temp-img img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Top Search Icon */
+.top-search {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 2000;
+}
+
+#searchIcon {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.4);
+  padding: 8px;
+  border-radius: 50%;
+  backdrop-filter: blur(5px);
+}
+
+/* Section Box (Search & Home) - Bottom Fixed */
+.section-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: rgba(0,0,0,0.4);
+  border-radius: 0;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.sb-home, .sb-search {
+  font-size: 16px;
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  flex: 1;
+  margin: 0 5px;
+  transition: background 0.3s;
+}
+
+.sb-home:hover, .sb-search:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+
+/* ===== PC / Large Screens ===== */
+@media screen and (min-width: 768px) {
+  
+  body {
+    padding-bottom: 0; /* no bottom bar space needed */
+  }
+
+  /* Main Box */
+  .main-box {
+    width: 60%;
+    max-width: 600px;
+    margin: 50px auto 30px auto;
+    padding: 30px;
+  }
+
+  .m-city-name {
+    font-size: 24px;
+  }
+
+  .m-city-name span {
+    font-size: 18px;
+  }
+
+  .m-temp-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .m-temp-img img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .m-temp-num {
+    font-size: 60px;
+  }
+
+  .m-temp-desc {
+    font-size: 18px;
+  }
+
+  /* Secondary Box */
+  .secondary-box {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 20px 30px;
+  }
+
+  .secondary-box div {
+    font-size: 18px;
+  }
+
+  .secondary-box img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .s-temp img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Hourly Forecast */
+  .hourly-forecast {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    padding: 20px 30px;
+  }
+
+  .hf-heading {
+    font-size: 24px;
+  }
+
+  .hf-elem {
+    padding: 25px 30px;
+    font-size: 14px;
+    min-width: 90px;
+  }
+
+  .hf-temp-img img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .hf-elem .hf-temp-num {
+    font-size: 16px;
+  }
+
+  /* Section Box - move to bottom-right like fixed bar */
+  .section-box {
+    display: none; /* hide bottom bar on PC */
+  }
+}
+
+/* Overlay background */
+.search-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 2000;
+}
+
+/* Active state */
+.search-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Search box */
+.search-box {
+  width: 80%;
+  max-width: 300px;
+}
+
+#overlay-input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+}
